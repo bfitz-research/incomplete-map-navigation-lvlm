@@ -1,0 +1,214 @@
+{
+  "schema_version": "tick_once_v4_semantic_only_blocked_regions_no_wedge_orange_goal",
+  "wall_time_iso": "2026-03-18T20:27:48-05:00",
+  "notes_root": "/home/brian/table_nav2/notes/env_warehouse",
+  "ready_for_lvlm": true,
+  "not_ready_reasons": [],
+  "export": {
+    "export_tick": 2178,
+    "export_timestamp": "20260318_202746",
+    "robot_pose_render": {
+      "x": 18.69603906523228,
+      "y": 1.2553742682046836,
+      "yaw_rad": 1.265674876798948
+    },
+    "crop": {
+      "size_m": 10.0,
+      "out_px": 200,
+      "meters_per_px": 0.05,
+      "bounds_render": {
+        "min_x": 13.69603906523228,
+        "max_x": 23.69603906523228,
+        "min_y": -3.7446257317953164,
+        "max_y": 6.255374268204683
+      }
+    }
+  },
+  "render": {
+    "export_tick": 2178,
+    "export_timestamp": "20260318_202746",
+    "rendered_at_wall_time": 1773883667.6877782,
+    "rendered": {
+      "local_vis": true,
+      "global_crop_vis": true,
+      "global_full_vis": true
+    },
+    "outputs": {
+      "local_vis_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/local_vis.png",
+      "global_crop_vis_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/global_crop_vis.png",
+      "global_full_vis_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/global_full_vis.png"
+    },
+    "state_path": "/home/brian/table_nav2/notes/env_warehouse/state/markers.json",
+    "global_plan_path": "/home/brian/table_nav2/notes/env_warehouse/state/global_plan.json"
+  },
+  "robot_state": {
+    "x_map": 18.69603906523228,
+    "y_map": 1.2553742682046836,
+    "yaw_rad": 1.265674876798948,
+    "source": "meta_fallback"
+  },
+  "mission_state": {
+    "ultimate_goal": {
+      "x": 21.0,
+      "y": 1.2
+    },
+    "active_goal": {
+      "x": 16.450653468646053,
+      "y": 1.3433611734196038
+    },
+    "pois": []
+  },
+  "blocked_regions_state": {
+    "count": 8,
+    "regions": [
+      {
+        "x_min": 1.928445306503169,
+        "y_min": 23.15164070570379,
+        "x_max": 7.328445306503168,
+        "y_max": 24.70164070570379,
+        "reason": "Stale active goal and blocked top-strip continuation; global crop shows the open interior aisle directly below-left, matching the current global plan.",
+        "source": "local_model",
+        "created_wall_time_iso": "2026-03-18T20:05:37-05:00"
+      },
+      {
+        "x_min": 1.7956642422709854,
+        "y_min": 24.991713263694486,
+        "x_max": 4.595664242270985,
+        "y_max": 26.641713263694488,
+        "reason": "Current active goal is stale near the blocked upper strip; global crop supports a clear eastbound interior-lane bypass to the right.",
+        "source": "local_model",
+        "created_wall_time_iso": "2026-03-18T20:13:05-05:00"
+      },
+      {
+        "x_min": 10.18308613230774,
+        "y_min": 26.060466824949415,
+        "x_max": 12.03308613230774,
+        "y_max": 27.310466824949415,
+        "reason": "Near active goal but that pocket is stale; global crop and plan support continuing east in the open upper aisle, avoiding the blocked upward notch.",
+        "source": "local_model",
+        "created_wall_time_iso": "2026-03-18T20:16:03-05:00"
+      },
+      {
+        "x_min": 19.147978927289312,
+        "y_min": 24.80479344336624,
+        "x_max": 21.197978927289313,
+        "y_max": 26.25479344336624,
+        "reason": "Active goal is stale in the upper notch; global crop supports committing downward into the right-side descent now.",
+        "source": "local_model",
+        "created_wall_time_iso": "2026-03-18T20:17:48-05:00"
+      },
+      {
+        "x_min": 20.138065024245403,
+        "y_min": 22.04542272851033,
+        "x_max": 21.9880650242454,
+        "y_max": 23.895422728510333,
+        "reason": "Active goal is stale in the blocked notch; global crop shows the open right-side descent entrance slightly forward/right, matching the current global plan.",
+        "source": "local_model",
+        "created_wall_time_iso": "2026-03-18T20:18:03-05:00"
+      },
+      {
+        "x_min": 21.292613289071383,
+        "y_min": 21.127295851550848,
+        "x_max": 23.192613289071385,
+        "y_max": 23.27729585155085,
+        "reason": "Current active goal is stale in the upper notch; global crop and RGB both support committing farther down the open right-side corridor.",
+        "source": "local_model",
+        "created_wall_time_iso": "2026-03-18T20:19:37-05:00"
+      },
+      {
+        "x_min": 21.540335671906995,
+        "y_min": -4.718799501593704,
+        "x_max": 22.990335671906994,
+        "y_max": -3.0687995015937037,
+        "reason": "Current active goal is stale and progress has stalled; global crop shows the valid leftward corridor from the corner, matching the new global plan.",
+        "source": "local_model",
+        "created_wall_time_iso": "2026-03-18T20:24:37-05:00"
+      },
+      {
+        "x_min": 23.098678616612567,
+        "y_min": -6.0232871650792035,
+        "x_max": 25.598678616612567,
+        "y_max": -2.7232871650792028,
+        "reason": "Current active goal is stale and progress has been poor; global crop shows the valid near-white leftward corridor entry from the corner, so commit to the immediate left turn into the bottom lane.",
+        "source": "local_model",
+        "created_wall_time_iso": "2026-03-18T20:25:29-05:00"
+      }
+    ]
+  },
+  "global_plan_state": {
+    "present": true,
+    "summary": {
+      "global_strategy": "Follow bottom lane left, then branch up-left to goal",
+      "route_phase": "Leftward traverse along bottom corridor from lower-right corner",
+      "reason": "The macro route is still the bottom-lane departure from the lower-right area, followed by an up-left approach to the goal. The current active goal remains behind/left in a stale pocket direction, while blocked-region memory and the full map both disfavor lingering in the right-edge nook."
+    }
+  },
+  "lvlm_inputs": {
+    "primary_local_map_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/local_vis.png",
+    "primary_global_crop_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/global_crop_vis.png",
+    "primary_global_full_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/global_full_vis.png",
+    "primary_rgb_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/rgb_left.png",
+    "optional_rgb_right_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/rgb_right.png",
+    "input_policy": {
+      "rgb_default_camera": "left",
+      "rgb_right_on_demand": true,
+      "maps_use_vis_outputs": true,
+      "anchor_markers_drawn": false,
+      "ultimate_goal_color": "orange",
+      "active_goal_color": "green",
+      "blind_wedge_drawn": false,
+      "blocked_regions_drawn": true
+    }
+  },
+  "exports": {
+    "meta_json": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/meta.json",
+    "vis_meta_json": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/vis_meta.json",
+    "markers_json": "/home/brian/table_nav2/notes/env_warehouse/state/markers.json",
+    "global_plan_json": "/home/brian/table_nav2/notes/env_warehouse/state/global_plan.json",
+    "local_vis_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/local_vis.png",
+    "global_crop_vis_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/global_crop_vis.png",
+    "global_full_vis_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/global_full_vis.png",
+    "rgb_left_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/rgb_left.png",
+    "rgb_right_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/rgb_right.png",
+    "local_costmap_crop_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/local_costmap_crop.png",
+    "global_costmap_crop_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/global_costmap_crop.png",
+    "global_costmap_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/global_costmap.png",
+    "static_crop_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/static_crop.png",
+    "global_map_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/global_map.png"
+  },
+  "exports_present": {
+    "meta_json": true,
+    "vis_meta_json": true,
+    "markers_json": true,
+    "global_plan_json": true,
+    "local_vis_png": true,
+    "global_crop_vis_png": true,
+    "global_full_vis_png": true,
+    "rgb_left_png": true,
+    "rgb_right_png": true,
+    "local_costmap_crop_png": true,
+    "global_costmap_crop_png": true,
+    "global_costmap_png": true,
+    "static_crop_png": true,
+    "global_map_png": false
+  },
+  "artifact_age_s": {
+    "meta_json": 0.067,
+    "vis_meta_json": 1.001,
+    "markers_json": 9.842,
+    "global_plan_json": 13.309,
+    "local_vis_png": 1.017,
+    "global_crop_vis_png": 1.016,
+    "global_full_vis_png": 1.002,
+    "rgb_left_png": 0.024,
+    "rgb_right_png": 1.997,
+    "local_costmap_crop_png": 0.068,
+    "global_costmap_crop_png": 0.067,
+    "global_costmap_png": 0.059,
+    "static_crop_png": 0.069,
+    "global_map_png": null
+  },
+  "warnings": [
+    "TF map<-base_link unavailable; used meta fallback: \"map\" passed to lookupTransform argument target_frame does not exist. "
+  ]
+}

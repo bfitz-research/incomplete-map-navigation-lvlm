@@ -1,0 +1,18 @@
+{
+  "schema_version": "recent_route_rejections_v1",
+  "updated_wall_time_iso": "2026-03-16T02:53:50-05:00",
+  "replan_counter": 29,
+  "rejections": [
+    {
+      "id": "rej_1773647611532",
+      "kind": "recent_failed_region",
+      "reason": "unsafe_waypoint_candidate",
+      "label": "unsafe_wp_1",
+      "center_u": 558,
+      "center_v": 689,
+      "radius_px": 36,
+      "replans_remaining": 1,
+      "created_wall_time_iso": "2026-03-16T02:53:31-05:00"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "single_global_last_planner_response_v1",
+  "created_wall_time_iso": "2026-03-15T19:58:19-05:00",
+  "planner_model": "gpt-5.4",
+  "trigger": "near_last_remaining_waypoint",
+  "trigger_reason": "robot is near the last remaining queued waypoint",
+  "action": "ratify_goal_reached",
+  "reason": "robot is already on the immediate final approach to the orange goal with only 0.74 m remaining and no meaningful additional routing segment visible",
+  "waypoints": [],
+  "raw_model_output": "{\"action\":\"ratify_goal_reached\",\"reason\":\"robot is already on the immediate final approach to the orange goal with only 0.74 m remaining and no meaningful additional routing segment visible\",\"waypoints\":[]}",
+  "waypoint_safety_filter": {
+    "waypoints": [],
+    "repair_count": 0,
+    "repairs": [],
+    "rejected": false
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "schema_version": "single_global_tick_v1",
+  "wall_time_iso": "2026-03-15T19:58:17-05:00",
+  "ready_for_lvlm": true,
+  "not_ready_reasons": [],
+  "notes_root": "/home/brian/table_nav2/notes/env_simple_maze",
+  "robot_state": {
+    "x_map": 2.589052026465126,
+    "y_map": 14.738017151692679,
+    "yaw_rad": 1.4057363865980215,
+    "source": "meta_fallback"
+  },
+  "mission_state": {
+    "ultimate_goal": {
+      "x": 2.5,
+      "y": 14.0
+    },
+    "active_goal": {
+      "x": 2.5,
+      "y": 14.0
+    },
+    "pois": []
+  },
+  "queue_state": {
+    "schema_version": "single_global_waypoint_queue_v1",
+    "plan_instance_id": "plan_20260315_195816",
+    "remaining_count": 1,
+    "active_waypoint": {
+      "id": "plan_20260315_195816_wp_01",
+      "label": "final approach",
+      "u": 109,
+      "v": 100,
+      "x_map": 2.5,
+      "y_map": 14.0,
+      "status": "active"
+    },
+    "remaining_waypoints": [
+      {
+        "id": "plan_20260315_195816_wp_01",
+        "label": "final approach",
+        "u": 109,
+        "v": 100,
+        "x_map": 2.5,
+        "y_map": 14.0,
+        "status": "active"
+      }
+    ],
+    "last_planner_action": "replace_plan",
+    "goal_ratified": false
+  },
+  "runner_state": {
+    "schema_version": "single_global_runner_state_v1",
+    "wall_time_iso": "2026-03-15T19:58:16-05:00",
+    "active_waypoint": {
+      "id": "plan_20260315_195816_wp_01",
+      "label": "final approach",
+      "x_map": 2.5,
+      "y_map": 14.0,
+      "u": 109,
+      "v": 100,
+      "status": "pending"
+    },
+    "remaining_waypoint_count": 1,
+    "remaining_waypoints": [
+      {
+        "id": "plan_20260315_195816_wp_01",
+        "label": "final approach",
+        "u": 109,
+        "v": 100,
+        "x_map": 2.5,
+        "y_map": 14.0,
+        "status": "pending"
+      }
+    ],
+    "distance_to_active_waypoint_m": 0.7795,
+    "distance_to_ultimate_goal_m": 0.7795,
+    "active_waypoint_geometry": {
+      "x_map": 2.5,
+      "y_map": 14.0,
+      "dx_m": -0.1267,
+      "dy_m": -0.7691,
+      "distance_m": 0.7795,
+      "bearing_global_deg": -99.36,
+      "bearing_relative_deg": 131.14
+    },
+    "ultimate_goal_geometry": {
+      "x_map": 2.5,
+      "y_map": 14.0,
+      "dx_m": -0.1267,
+      "dy_m": -0.7691,
+      "distance_m": 0.7795,
+      "bearing_global_deg": -99.36,
+      "bearing_relative_deg": 131.14
+    },
+    "seconds_since_progress": 0.0,
+    "seconds_since_last_planner_call": 0.0,
+    "planner_interval_s": 12.0,
+    "progress_stall_window_s": 18.0,
+    "progress_epsilon_m": 0.15,
+    "near_last_remaining_waypoint": true,
+    "active_goal_in_flight": false,
+    "goal_ratified": false,
+    "hard_goal_stop": false,
+    "recent_route_rejection_count": 0
+  },
+  "last_planner_response": {
+    "schema_version": "single_global_last_planner_response_v1",
+    "created_wall_time_iso": "2026-03-15T19:58:16-05:00",
+    "planner_model": "gpt-5.4",
+    "trigger": "near_last_remaining_waypoint",
+    "trigger_reason": "robot is near the last remaining queued waypoint",
+    "action": "replace_plan",
+    "reason": "Robot is near the last queued waypoint but still about 0.78 m from the goal; use a safer final-approach point in the bright center of the small top-left alcove rather than ratifying goal reached.",
+    "waypoints": [
+      {
+        "u": 109,
+        "v": 100,
+        "label": "final approach"
+      }
+    ],
+    "raw_model_output": "{\"action\":\"replace_plan\",\"reason\":\"Robot is near the last queued waypoint but still about 0.78 m from the goal; use a safer final-approach point in the bright center of the small top-left alcove rather than ratifying goal reached.\",\"waypoints\":[{\"u\":109,\"v\":100,\"label\":\"final approach\"}]}",
+    "waypoint_safety_filter": {
+      "waypoints": [
+        {
+          "u": 109,
+          "v": 100,
+          "label": "final approach"
+        }
+      ],
+      "repair_count": 0,
+      "repairs": [],
+      "rejected": false
+    }
+  },
+  "recent_route_rejections": {
+    "schema_version": "recent_route_rejections_v1",
+    "updated_wall_time_iso": "2026-03-15T19:58:16-05:00",
+    "replan_counter": 23,
+    "rejections": []
+  },
+  "planner_inputs": {
+    "primary_global_full_png": "/home/brian/table_nav2/notes/env_simple_maze/exports/latest/single_global_full_vis.png",
+    "primary_rgb_png": "/home/brian/table_nav2/notes/env_simple_maze/exports/latest/rgb_left.png",
+    "optional_rgb_right_png": "/home/brian/table_nav2/notes/env_simple_maze/exports/latest/rgb_right.png",
+    "optional_local_crop_png": null,
+    "input_policy": {
+      "global_overlay_primary": true,
+      "rgb_scene_status": true,
+      "local_crop_optional": false,
+      "ultimate_goal_color": "orange",
+      "active_goal_color": "green",
+      "queued_waypoint_color": "cyan",
+      "robot_color": "red",
+      "recent_rejection_region_color": "magenta"
+    }
+  },
+  "global_image_geometry": {
+    "w": 359,
+    "h": 480,
+    "res": 0.05000000074505806,
+    "origin_x": -2.975,
+    "origin_y": -4.975,
+    "pixel_contract": {
+      "u_axis": "right",
+      "v_axis": "down",
+      "u_range": [
+        0,
+        358
+      ],
+      "v_range": [
+        0,
+        479
+      ]
+    }
+  },
+  "exports": {
+    "meta_json": "/home/brian/table_nav2/notes/env_simple_maze/exports/latest/meta.json",
+    "markers_json": "/home/brian/table_nav2/notes/env_simple_maze/state/markers.json",
+    "queue_json": "/home/brian/table_nav2/notes/env_simple_maze/state/single_global_waypoint_queue.json",
+    "runner_state_json": "/home/brian/table_nav2/notes/env_simple_maze/state/single_global_runner_state.json",
+    "planner_state_json": "/home/brian/table_nav2/notes/env_simple_maze/state/single_global_last_planner_response.json",
+    "recent_route_rejections_json": "/home/brian/table_nav2/notes/env_simple_maze/state/recent_route_rejections.json",
+    "global_costmap_png": "/home/brian/table_nav2/notes/env_simple_maze/exports/latest/global_costmap.png",
+    "global_costmap_sidecar_txt": "/home/brian/table_nav2/notes/env_simple_maze/exports/latest/global_costmap.png.txt",
+    "single_global_full_vis_png": "/home/brian/table_nav2/notes/env_simple_maze/exports/latest/single_global_full_vis.png",
+    "single_global_local_vis_png": "/home/brian/table_nav2/notes/env_simple_maze/exports/latest/single_global_local_vis.png",
+    "single_global_vis_meta_json": "/home/brian/table_nav2/notes/env_simple_maze/exports/latest/single_global_vis_meta.json",
+    "rgb_left_png": "/home/brian/table_nav2/notes/env_simple_maze/exports/latest/rgb_left.png",
+    "rgb_right_png": "/home/brian/table_nav2/notes/env_simple_maze/exports/latest/rgb_right.png",
+    "local_costmap_crop_png": "/home/brian/table_nav2/notes/env_simple_maze/exports/latest/local_costmap_crop.png"
+  },
+  "exports_present": {
+    "meta_json": true,
+    "markers_json": true,
+    "queue_json": true,
+    "runner_state_json": true,
+    "planner_state_json": true,
+    "recent_route_rejections_json": true,
+    "global_costmap_png": true,
+    "global_costmap_sidecar_txt": true,
+    "single_global_full_vis_png": true,
+    "single_global_local_vis_png": false,
+    "single_global_vis_meta_json": true,
+    "rgb_left_png": true,
+    "rgb_right_png": true,
+    "local_costmap_crop_png": true
+  },
+  "artifact_age_s": {
+    "meta_json": 1.865,
+    "markers_json": 1.369,
+    "queue_json": 1.37,
+    "runner_state_json": 1.371,
+    "planner_state_json": 1.371,
+    "recent_route_rejections_json": 3.895,
+    "global_costmap_png": 1.863,
+    "global_costmap_sidecar_txt": 1.862,
+    "single_global_full_vis_png": 0.002,
+    "single_global_local_vis_png": null,
+    "single_global_vis_meta_json": 0.0,
+    "rgb_left_png": 1.858,
+    "rgb_right_png": 1.849,
+    "local_costmap_crop_png": 1.866
+  },
+  "warnings": [
+    "TF map<-base_link unavailable; used meta fallback: \"map\" passed to lookupTransform argument target_frame does not exist. "
+  ]
+}

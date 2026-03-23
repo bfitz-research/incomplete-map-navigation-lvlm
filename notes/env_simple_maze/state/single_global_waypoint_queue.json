@@ -1,0 +1,19 @@
+{
+  "schema_version": "single_global_waypoint_queue_v1",
+  "plan_instance_id": "plan_20260315_195816",
+  "created_wall_time_iso": "2026-03-15T19:58:16-05:00",
+  "last_planner_action": "ratify_goal_reached",
+  "last_planner_reason": "Robot is near the last queued waypoint but still about 0.78 m from the goal; use a safer final-approach point in the bright center of the small top-left alcove rather than ratifying goal reached.",
+  "goal_ratified": true,
+  "waypoints": [
+    {
+      "id": "plan_20260315_195816_wp_01",
+      "label": "final approach",
+      "u": 109,
+      "v": 100,
+      "x_map": 2.5,
+      "y_map": 14.0,
+      "status": "active"
+    }
+  ]
+}

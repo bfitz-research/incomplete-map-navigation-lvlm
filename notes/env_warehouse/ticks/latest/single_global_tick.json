@@ -1,0 +1,277 @@
+{
+  "schema_version": "single_global_tick_v1",
+  "wall_time_iso": "2026-03-16T02:53:49-05:00",
+  "ready_for_lvlm": true,
+  "not_ready_reasons": [],
+  "notes_root": "/home/brian/table_nav2/notes/env_warehouse",
+  "robot_state": {
+    "x_map": 11.524230516091187,
+    "y_map": 1.4894399199827923,
+    "yaw_rad": -0.494048413628451,
+    "source": "meta_fallback"
+  },
+  "mission_state": {
+    "ultimate_goal": {
+      "x": 21.0,
+      "y": 1.2
+    },
+    "active_goal": {
+      "x": 17.55,
+      "y": 0.8
+    },
+    "pois": []
+  },
+  "queue_state": {
+    "schema_version": "single_global_waypoint_queue_v1",
+    "plan_instance_id": "plan_20260316_025336",
+    "remaining_count": 2,
+    "active_waypoint": {
+      "id": "plan_20260316_025336_wp_01",
+      "label": "rightward corridor commit",
+      "u": 630,
+      "v": 624,
+      "x_map": 17.55,
+      "y_map": 0.8,
+      "status": "active"
+    },
+    "remaining_waypoints": [
+      {
+        "id": "plan_20260316_025336_wp_01",
+        "label": "rightward corridor commit",
+        "u": 630,
+        "v": 624,
+        "x_map": 17.55,
+        "y_map": 0.8,
+        "status": "active"
+      },
+      {
+        "id": "plan_20260316_025336_wp_02",
+        "label": "safe final approach",
+        "u": 692,
+        "v": 639,
+        "x_map": 20.650001,
+        "y_map": 0.05,
+        "status": "pending"
+      }
+    ],
+    "last_planner_action": "replace_plan",
+    "goal_ratified": false
+  },
+  "runner_state": {
+    "schema_version": "single_global_runner_state_v1",
+    "wall_time_iso": "2026-03-16T02:53:48-05:00",
+    "active_waypoint": {
+      "id": "plan_20260316_025336_wp_01",
+      "label": "rightward corridor commit",
+      "x_map": 17.55,
+      "y_map": 0.8,
+      "u": 630,
+      "v": 624,
+      "status": "active"
+    },
+    "remaining_waypoint_count": 2,
+    "remaining_waypoints": [
+      {
+        "id": "plan_20260316_025336_wp_01",
+        "label": "rightward corridor commit",
+        "u": 630,
+        "v": 624,
+        "x_map": 17.55,
+        "y_map": 0.8,
+        "status": "active"
+      },
+      {
+        "id": "plan_20260316_025336_wp_02",
+        "label": "safe final approach",
+        "u": 692,
+        "v": 639,
+        "x_map": 20.650001,
+        "y_map": 0.05,
+        "status": "pending"
+      }
+    ],
+    "distance_to_active_waypoint_m": 6.065,
+    "distance_to_ultimate_goal_m": 9.4801,
+    "active_waypoint_geometry": {
+      "x_map": 17.55,
+      "y_map": 0.8,
+      "dx_m": 6.0257,
+      "dy_m": -0.6894,
+      "distance_m": 6.065,
+      "bearing_global_deg": -6.53,
+      "bearing_relative_deg": 22.16
+    },
+    "ultimate_goal_geometry": {
+      "x_map": 21.0,
+      "y_map": 1.2,
+      "dx_m": 9.4757,
+      "dy_m": -0.2894,
+      "distance_m": 9.4801,
+      "bearing_global_deg": -1.75,
+      "bearing_relative_deg": 26.94
+    },
+    "seconds_since_progress": 10.025,
+    "seconds_since_last_planner_call": 11.509,
+    "planner_interval_s": 12.0,
+    "progress_stall_window_s": 18.0,
+    "progress_epsilon_m": 0.15,
+    "near_last_remaining_waypoint": false,
+    "active_goal_in_flight": true,
+    "goal_ratified": false,
+    "hard_goal_stop": false,
+    "recent_route_rejection_count": 1
+  },
+  "last_planner_response": {
+    "schema_version": "single_global_last_planner_response_v1",
+    "created_wall_time_iso": "2026-03-16T02:53:36-05:00",
+    "planner_model": "gpt-5.4",
+    "trigger": "periodic_recheck",
+    "trigger_reason": "periodic replanning interval of 12.0s elapsed",
+    "action": "replace_plan",
+    "reason": "Current single-point final approach is too far and progress is stalled; a safer route-preserving first commitment is to move rightward above the rejected bottom notch, then approach the goal area.",
+    "waypoints": [
+      {
+        "u": 630,
+        "v": 624,
+        "label": "rightward corridor commit"
+      },
+      {
+        "u": 692,
+        "v": 639,
+        "label": "safe final approach"
+      }
+    ],
+    "raw_model_output": "{\"action\":\"replace_plan\",\"reason\":\"Current single-point final approach is too far and progress is stalled; a safer route-preserving first commitment is to move rightward above the rejected bottom notch, then approach the goal area.\",\"waypoints\":[{\"u\":630,\"v\":620,\"label\":\"rightward corridor commit\"},{\"u\":692,\"v\":639,\"label\":\"safe final approach\"}]}",
+    "waypoint_safety_filter": {
+      "waypoints": [
+        {
+          "u": 630,
+          "v": 624,
+          "label": "rightward corridor commit"
+        },
+        {
+          "u": 692,
+          "v": 639,
+          "label": "safe final approach"
+        }
+      ],
+      "repair_count": 1,
+      "repairs": [
+        {
+          "index": 1,
+          "label": "rightward corridor commit",
+          "from_u": 630,
+          "from_v": 620,
+          "to_u": 630,
+          "to_v": 624,
+          "repair_radius_px": 4
+        }
+      ],
+      "rejected": false
+    }
+  },
+  "recent_route_rejections": {
+    "schema_version": "recent_route_rejections_v1",
+    "updated_wall_time_iso": "2026-03-16T02:53:48-05:00",
+    "replan_counter": 28,
+    "rejections": [
+      {
+        "id": "rej_1773647611532",
+        "kind": "recent_failed_region",
+        "reason": "unsafe_waypoint_candidate",
+        "label": "unsafe_wp_1",
+        "center_u": 558,
+        "center_v": 689,
+        "radius_px": 36,
+        "replans_remaining": 2,
+        "created_wall_time_iso": "2026-03-16T02:53:31-05:00"
+      }
+    ]
+  },
+  "planner_inputs": {
+    "primary_global_full_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/single_global_full_vis.png",
+    "primary_rgb_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/rgb_left.png",
+    "optional_rgb_right_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/rgb_right.png",
+    "optional_local_crop_png": null,
+    "input_policy": {
+      "global_overlay_primary": true,
+      "rgb_scene_status": true,
+      "local_crop_optional": false,
+      "ultimate_goal_color": "orange",
+      "active_goal_color": "green",
+      "queued_waypoint_color": "cyan",
+      "robot_color": "red",
+      "recent_rejection_region_color": "magenta"
+    }
+  },
+  "global_image_geometry": {
+    "w": 820,
+    "h": 800,
+    "res": 0.05000000074505806,
+    "origin_x": -13.975,
+    "origin_y": -7.975,
+    "pixel_contract": {
+      "u_axis": "right",
+      "v_axis": "down",
+      "u_range": [
+        0,
+        819
+      ],
+      "v_range": [
+        0,
+        799
+      ]
+    }
+  },
+  "exports": {
+    "meta_json": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/meta.json",
+    "markers_json": "/home/brian/table_nav2/notes/env_warehouse/state/markers.json",
+    "queue_json": "/home/brian/table_nav2/notes/env_warehouse/state/single_global_waypoint_queue.json",
+    "runner_state_json": "/home/brian/table_nav2/notes/env_warehouse/state/single_global_runner_state.json",
+    "planner_state_json": "/home/brian/table_nav2/notes/env_warehouse/state/single_global_last_planner_response.json",
+    "recent_route_rejections_json": "/home/brian/table_nav2/notes/env_warehouse/state/recent_route_rejections.json",
+    "global_costmap_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/global_costmap.png",
+    "global_costmap_sidecar_txt": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/global_costmap.png.txt",
+    "single_global_full_vis_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/single_global_full_vis.png",
+    "single_global_local_vis_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/single_global_local_vis.png",
+    "single_global_vis_meta_json": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/single_global_vis_meta.json",
+    "rgb_left_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/rgb_left.png",
+    "rgb_right_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/rgb_right.png",
+    "local_costmap_crop_png": "/home/brian/table_nav2/notes/env_warehouse/exports/latest/local_costmap_crop.png"
+  },
+  "exports_present": {
+    "meta_json": true,
+    "markers_json": true,
+    "queue_json": true,
+    "runner_state_json": true,
+    "planner_state_json": true,
+    "recent_route_rejections_json": true,
+    "global_costmap_png": true,
+    "global_costmap_sidecar_txt": true,
+    "single_global_full_vis_png": true,
+    "single_global_local_vis_png": false,
+    "single_global_vis_meta_json": true,
+    "rgb_left_png": true,
+    "rgb_right_png": true,
+    "local_costmap_crop_png": true
+  },
+  "artifact_age_s": {
+    "meta_json": 1.509,
+    "markers_json": 11.897,
+    "queue_json": 13.381,
+    "runner_state_json": 1.873,
+    "planner_state_json": 13.382,
+    "recent_route_rejections_json": 16.972,
+    "global_costmap_png": 1.502,
+    "global_costmap_sidecar_txt": 1.501,
+    "single_global_full_vis_png": 0.001,
+    "single_global_local_vis_png": null,
+    "single_global_vis_meta_json": 0.0,
+    "rgb_left_png": 1.473,
+    "rgb_right_png": 1.45,
+    "local_costmap_crop_png": 1.511
+  },
+  "warnings": [
+    "TF map<-base_link unavailable; used meta fallback: \"map\" passed to lookupTransform argument target_frame does not exist. "
+  ]
+}

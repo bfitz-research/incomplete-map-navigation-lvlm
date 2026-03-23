@@ -1,0 +1,37 @@
+{
+  "schema_version": "single_global_waypoint_queue_v1",
+  "plan_instance_id": "plan_20260315_010313",
+  "created_wall_time_iso": "2026-03-15T01:03:13-05:00",
+  "last_planner_action": "replace_plan",
+  "last_planner_reason": "Previous first branch failed inside the nearby rejection zone; use the safer nearby upper-left corridor mouth and then continue on a centerline approach toward the goal area.",
+  "goal_ratified": false,
+  "waypoints": [
+    {
+      "id": "plan_20260315_010313_wp_01",
+      "label": "upper-left corridor mouth",
+      "u": 231,
+      "v": 806,
+      "x_map": -15.4,
+      "y_map": 24.700001,
+      "status": "active"
+    },
+    {
+      "id": "plan_20260315_010313_wp_02",
+      "label": "post-turn stabilizing point",
+      "u": 225,
+      "v": 781,
+      "x_map": -15.7,
+      "y_map": 25.950001,
+      "status": "pending"
+    },
+    {
+      "id": "plan_20260315_010313_wp_03",
+      "label": "goal approach centerline",
+      "u": 233,
+      "v": 827,
+      "x_map": -15.3,
+      "y_map": 23.650001,
+      "status": "pending"
+    }
+  ]
+}

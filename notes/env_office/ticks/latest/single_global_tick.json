@@ -1,0 +1,295 @@
+{
+  "schema_version": "single_global_tick_v1",
+  "wall_time_iso": "2026-03-15T01:03:19-05:00",
+  "ready_for_lvlm": true,
+  "not_ready_reasons": [],
+  "notes_root": "/home/brian/table_nav2/notes/env_office",
+  "robot_state": {
+    "x_map": -7.241672218865826,
+    "y_map": 9.943770161925572,
+    "yaw_rad": -0.03919146548967006,
+    "source": "meta_fallback"
+  },
+  "mission_state": {
+    "ultimate_goal": {
+      "x": -15.75,
+      "y": 21.0
+    },
+    "active_goal": {
+      "x": -15.4,
+      "y": 24.700001
+    },
+    "pois": []
+  },
+  "queue_state": {
+    "schema_version": "single_global_waypoint_queue_v1",
+    "plan_instance_id": "plan_20260315_010313",
+    "remaining_count": 3,
+    "active_waypoint": {
+      "id": "plan_20260315_010313_wp_01",
+      "label": "upper-left corridor mouth",
+      "u": 231,
+      "v": 806,
+      "x_map": -15.4,
+      "y_map": 24.700001,
+      "status": "active"
+    },
+    "remaining_waypoints": [
+      {
+        "id": "plan_20260315_010313_wp_01",
+        "label": "upper-left corridor mouth",
+        "u": 231,
+        "v": 806,
+        "x_map": -15.4,
+        "y_map": 24.700001,
+        "status": "active"
+      },
+      {
+        "id": "plan_20260315_010313_wp_02",
+        "label": "post-turn stabilizing point",
+        "u": 225,
+        "v": 781,
+        "x_map": -15.7,
+        "y_map": 25.950001,
+        "status": "pending"
+      },
+      {
+        "id": "plan_20260315_010313_wp_03",
+        "label": "goal approach centerline",
+        "u": 233,
+        "v": 827,
+        "x_map": -15.3,
+        "y_map": 23.650001,
+        "status": "pending"
+      }
+    ],
+    "last_planner_action": "replace_plan",
+    "goal_ratified": false
+  },
+  "runner_state": {
+    "schema_version": "single_global_runner_state_v1",
+    "wall_time_iso": "2026-03-15T01:03:17-05:00",
+    "active_waypoint": {
+      "id": "plan_20260315_010313_wp_01",
+      "label": "upper-left corridor mouth",
+      "x_map": -15.4,
+      "y_map": 24.700001,
+      "u": 231,
+      "v": 806,
+      "status": "active"
+    },
+    "remaining_waypoint_count": 3,
+    "remaining_waypoints": [
+      {
+        "id": "plan_20260315_010313_wp_01",
+        "label": "upper-left corridor mouth",
+        "u": 231,
+        "v": 806,
+        "x_map": -15.4,
+        "y_map": 24.700001,
+        "status": "active"
+      },
+      {
+        "id": "plan_20260315_010313_wp_02",
+        "label": "post-turn stabilizing point",
+        "u": 225,
+        "v": 781,
+        "x_map": -15.7,
+        "y_map": 25.950001,
+        "status": "pending"
+      },
+      {
+        "id": "plan_20260315_010313_wp_03",
+        "label": "goal approach centerline",
+        "u": 233,
+        "v": 827,
+        "x_map": -15.3,
+        "y_map": 23.650001,
+        "status": "pending"
+      }
+    ],
+    "distance_to_active_waypoint_m": 16.755,
+    "distance_to_ultimate_goal_m": 13.8317,
+    "active_waypoint_geometry": {
+      "x_map": -15.4,
+      "y_map": 24.700001,
+      "dx_m": -8.0241,
+      "dy_m": 14.7086,
+      "distance_m": 16.755,
+      "bearing_global_deg": 118.61,
+      "bearing_relative_deg": 121.94
+    },
+    "ultimate_goal_geometry": {
+      "x_map": -15.75,
+      "y_map": 21.0,
+      "dx_m": -8.3741,
+      "dy_m": 11.0086,
+      "distance_m": 13.8317,
+      "bearing_global_deg": 127.26,
+      "bearing_relative_deg": 130.58
+    },
+    "seconds_since_progress": 1.544,
+    "seconds_since_last_planner_call": 3.754,
+    "planner_interval_s": 12.0,
+    "progress_stall_window_s": 18.0,
+    "progress_epsilon_m": 0.15,
+    "near_last_remaining_waypoint": false,
+    "active_goal_in_flight": false,
+    "goal_ratified": false,
+    "hard_goal_stop": false,
+    "recent_route_rejection_count": 1
+  },
+  "last_planner_response": {
+    "schema_version": "single_global_last_planner_response_v1",
+    "created_wall_time_iso": "2026-03-15T01:03:13-05:00",
+    "planner_model": "gpt-5.4",
+    "trigger": "nav2_failed_waypoint",
+    "trigger_reason": "Nav2 returned status 6 for waypoint plan_20260315_010300_wp_01",
+    "action": "replace_plan",
+    "reason": "Previous first branch failed inside the nearby rejection zone; use the safer nearby upper-left corridor mouth and then continue on a centerline approach toward the goal area.",
+    "waypoints": [
+      {
+        "u": 231,
+        "v": 806,
+        "label": "upper-left corridor mouth"
+      },
+      {
+        "u": 225,
+        "v": 781,
+        "label": "post-turn stabilizing point"
+      },
+      {
+        "u": 233,
+        "v": 827,
+        "label": "goal approach centerline"
+      }
+    ],
+    "raw_model_output": "{\"action\":\"replace_plan\",\"reason\":\"Previous first branch failed inside the nearby rejection zone; use the safer nearby upper-left corridor mouth and then continue on a centerline approach toward the goal area.\",\"waypoints\":[{\"u\":231,\"v\":806,\"label\":\"upper-left corridor mouth\"},{\"u\":225,\"v\":781,\"label\":\"post-turn stabilizing point\"},{\"u\":233,\"v\":827,\"label\":\"goal approach centerline\"}]}",
+    "waypoint_safety_filter": {
+      "waypoints": [
+        {
+          "u": 231,
+          "v": 806,
+          "label": "upper-left corridor mouth"
+        },
+        {
+          "u": 225,
+          "v": 781,
+          "label": "post-turn stabilizing point"
+        },
+        {
+          "u": 233,
+          "v": 827,
+          "label": "goal approach centerline"
+        }
+      ],
+      "repair_count": 0,
+      "repairs": [],
+      "rejected": false
+    }
+  },
+  "recent_route_rejections": {
+    "schema_version": "recent_route_rejections_v1",
+    "updated_wall_time_iso": "2026-03-15T01:03:18-05:00",
+    "replan_counter": 73,
+    "rejections": [
+      {
+        "id": "rej_1773554588275",
+        "kind": "recent_failed_region",
+        "reason": "nav2_status_6",
+        "label": "plan_20260315_010300_wp_01",
+        "center_u": 226,
+        "center_v": 805,
+        "radius_px": 36,
+        "replans_remaining": 2,
+        "created_wall_time_iso": "2026-03-15T01:03:08-05:00"
+      }
+    ]
+  },
+  "planner_inputs": {
+    "primary_global_full_png": "/home/brian/table_nav2/notes/env_office/exports/latest/single_global_full_vis.png",
+    "primary_rgb_png": "/home/brian/table_nav2/notes/env_office/exports/latest/rgb_left.png",
+    "optional_rgb_right_png": "/home/brian/table_nav2/notes/env_office/exports/latest/rgb_right.png",
+    "optional_local_crop_png": null,
+    "input_policy": {
+      "global_overlay_primary": true,
+      "rgb_scene_status": true,
+      "local_crop_optional": false,
+      "ultimate_goal_color": "orange",
+      "active_goal_color": "green",
+      "queued_waypoint_color": "cyan",
+      "robot_color": "red",
+      "recent_rejection_region_color": "magenta"
+    }
+  },
+  "global_image_geometry": {
+    "w": 780,
+    "h": 1880,
+    "res": 0.05000000074505806,
+    "origin_x": -26.975,
+    "origin_y": -28.975,
+    "pixel_contract": {
+      "u_axis": "right",
+      "v_axis": "down",
+      "u_range": [
+        0,
+        779
+      ],
+      "v_range": [
+        0,
+        1879
+      ]
+    }
+  },
+  "exports": {
+    "meta_json": "/home/brian/table_nav2/notes/env_office/exports/latest/meta.json",
+    "markers_json": "/home/brian/table_nav2/notes/env_office/state/markers.json",
+    "queue_json": "/home/brian/table_nav2/notes/env_office/state/single_global_waypoint_queue.json",
+    "runner_state_json": "/home/brian/table_nav2/notes/env_office/state/single_global_runner_state.json",
+    "planner_state_json": "/home/brian/table_nav2/notes/env_office/state/single_global_last_planner_response.json",
+    "recent_route_rejections_json": "/home/brian/table_nav2/notes/env_office/state/recent_route_rejections.json",
+    "global_costmap_png": "/home/brian/table_nav2/notes/env_office/exports/latest/global_costmap.png",
+    "global_costmap_sidecar_txt": "/home/brian/table_nav2/notes/env_office/exports/latest/global_costmap.png.txt",
+    "single_global_full_vis_png": "/home/brian/table_nav2/notes/env_office/exports/latest/single_global_full_vis.png",
+    "single_global_local_vis_png": "/home/brian/table_nav2/notes/env_office/exports/latest/single_global_local_vis.png",
+    "single_global_vis_meta_json": "/home/brian/table_nav2/notes/env_office/exports/latest/single_global_vis_meta.json",
+    "rgb_left_png": "/home/brian/table_nav2/notes/env_office/exports/latest/rgb_left.png",
+    "rgb_right_png": "/home/brian/table_nav2/notes/env_office/exports/latest/rgb_right.png",
+    "local_costmap_crop_png": "/home/brian/table_nav2/notes/env_office/exports/latest/local_costmap_crop.png"
+  },
+  "exports_present": {
+    "meta_json": true,
+    "markers_json": true,
+    "queue_json": true,
+    "runner_state_json": true,
+    "planner_state_json": true,
+    "recent_route_rejections_json": true,
+    "global_costmap_png": true,
+    "global_costmap_sidecar_txt": true,
+    "single_global_full_vis_png": true,
+    "single_global_local_vis_png": false,
+    "single_global_vis_meta_json": true,
+    "rgb_left_png": true,
+    "rgb_right_png": true,
+    "local_costmap_crop_png": true
+  },
+  "artifact_age_s": {
+    "meta_json": 1.549,
+    "markers_json": 1.839,
+    "queue_json": 5.593,
+    "runner_state_json": 1.84,
+    "planner_state_json": 5.594,
+    "recent_route_rejections_json": 8.94,
+    "global_costmap_png": 1.53,
+    "global_costmap_sidecar_txt": 1.528,
+    "single_global_full_vis_png": 0.002,
+    "single_global_local_vis_png": null,
+    "single_global_vis_meta_json": 0.0,
+    "rgb_left_png": 1.53,
+    "rgb_right_png": 1.504,
+    "local_costmap_crop_png": 1.55
+  },
+  "warnings": [
+    "TF map<-base_link unavailable; used meta fallback: \"map\" passed to lookupTransform argument target_frame does not exist. "
+  ]
+}

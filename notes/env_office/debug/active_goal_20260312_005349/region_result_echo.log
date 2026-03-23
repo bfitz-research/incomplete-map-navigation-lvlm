@@ -1,0 +1,12 @@
+data: "{\n  \"ok\": true,\n  \"phase\": \"picked_and_sent\",\n  \"goal_seq\": 1,\n  \"goal\": {\n    \"x\": -0.7249960951675476,\n    \"y\": 3.975000000000..."
+---
+data: "{\n  \"ok\": true,\n  \"phase\": \"goal_accepted\",\n  \"goal_seq\": 1,\n  \"goal\": {\n    \"x\": -0.7249960951675476,\n    \"y\": 3.97500000000038..."
+---
+data: "{\n  \"ok\": true,\n  \"phase\": \"picked_and_sent\",\n  \"goal_seq\": 2,\n  \"goal\": {\n    \"x\": 0.5830602092629826,\n    \"y\": 6.3189350905861..."
+---
+data: "{\n  \"ok\": true,\n  \"phase\": \"goal_accepted\",\n  \"goal_seq\": 2,\n  \"goal\": {\n    \"x\": 0.5830602092629826,\n    \"y\": 6.318935090586132..."
+---
+data: "{\n  \"ok\": true,\n  \"phase\": \"nav2_result\",\n  \"goal_seq\": 1,\n  \"stale_result\": true,\n  \"nav2_status\": 6,\n  \"goal\": {\n    \"x\": -0.7..."
+---
+data: "{\n  \"ok\": true,\n  \"phase\": \"nav2_result\",\n  \"goal_seq\": 2,\n  \"stale_result\": false,\n  \"nav2_status\": 4,\n  \"goal\": {\n    \"x\": 0.5..."
+---

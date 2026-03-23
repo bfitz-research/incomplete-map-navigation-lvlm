@@ -1,0 +1,14 @@
+{
+  "schema_version": "blocked_regions_v1",
+  "regions": [
+    {
+      "x_min": -17.449391266796525,
+      "y_min": 16.912396853930897,
+      "x_max": -13.399391266796524,
+      "y_max": 20.612396853930896,
+      "reason": "Near final goal but progress is very slow and RGB/local evidence suggests the corridor ahead is obstructed, so terminal approach should be reviewed.",
+      "source": "local_model",
+      "created_wall_time_iso": "2026-03-14T14:22:47-05:00"
+    }
+  ]
+}
