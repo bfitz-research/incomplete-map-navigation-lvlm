@@ -13,13 +13,14 @@ Outputs:
 - legend/report TXT
 
 Example:
+REPO=/path/to/incomplete-map-navigation-lvlm
+
 python3 make_multi_overlay.py \
-  --runs-dir ~/table_nav2/notes/env_warehouse/runs/lvlm_global_updates_on \
-  --map-yaml ~/table_nav2/maps/env_warehouse/test/map.yaml \
-  --oracle-json ~/table_nav2/notes/env_warehouse/oracle/oracle_path.json \
+  --runs-dir "$REPO/notes/env_warehouse/runs/lvlm_global_updates_on" \
+  --map-yaml "$REPO/maps/env_warehouse/test/map.yaml" \
+  --oracle-json "$REPO/notes/env_warehouse/oracle/oracle_path.json" \
   --limit 5
 """
-
 import argparse
 import csv
 import json

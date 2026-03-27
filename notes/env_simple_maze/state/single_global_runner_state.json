@@ -1,6 +1,0 @@
-{
-  "schema_version": "single_global_runner_state_v1",
-  "wall_time_iso": "2026-03-15T19:58:20-05:00",
-  "status": "stopped",
-  "stop_reason": "planner_ratified_goal_reached"
-}

@@ -871,8 +871,10 @@ class SingleGlobalWaypointRunner(Node):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--notes-root", default="~/table_nav2/notes/current")
-    ap.add_argument("--scripts-root", type=Path, default=Path("~/table_nav2/scripts").expanduser())
+    repo_root = Path(__file__).resolve().parents[2]
+
+    ap.add_argument("--notes-root", default=str(repo_root / "notes" / "current"))
+    ap.add_argument("--scripts-root", type=Path, default=repo_root / "scripts")
     ap.add_argument("--goal-x", type=float, required=True)
     ap.add_argument("--goal-y", type=float, required=True)
     ap.add_argument("--model", default="gpt-5.4")

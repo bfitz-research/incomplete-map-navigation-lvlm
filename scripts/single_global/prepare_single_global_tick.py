@@ -290,7 +290,8 @@ class PayloadPrepNode(Node):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--notes-root", default="~/table_nav2/notes/current")
+    repo_root = Path(__file__).resolve().parents[2]
+    ap.add_argument("--notes-root", default=str(repo_root / "notes" / "current"))
     ap.add_argument("--tf-wait", type=float, default=1.0)
     ap.add_argument("--include-local-crop", action="store_true")
     args = ap.parse_args()

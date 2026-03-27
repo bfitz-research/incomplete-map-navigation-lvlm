@@ -5,6 +5,7 @@ import os
 import time
 from functools import partial
 from typing import Optional, Tuple
+from pathlib import Path
 
 import rclpy
 from rclpy.node import Node
@@ -77,8 +78,11 @@ class RegionGoalPickerNode(Node):
             except ParameterAlreadyDeclaredException:
                 pass
 
-        safe_declare("meta_path", "~/table_nav2/notes/current/exports/latest/meta.json")
-        safe_declare("markers_path", "~/table_nav2/notes/current/state/markers.json")
+        repo_root = Path(__file__).resolve().parent.parent
+        default_notes_root = repo_root / "notes" / "current"
+
+        safe_declare("meta_path", str(default_notes_root / "exports" / "latest" / "meta.json"))
+        safe_declare("markers_path", str(default_notes_root / "state" / "markers.json"))
         safe_declare("write_active_goal", True)
 
         safe_declare("local_costmap_topic", "/local_costmap/costmap")

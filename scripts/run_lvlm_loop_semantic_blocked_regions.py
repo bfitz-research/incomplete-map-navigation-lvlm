@@ -8,6 +8,7 @@ import os
 import subprocess
 import sys
 import time
+import shlex
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, Optional
@@ -233,9 +234,14 @@ class LVLMLoopRunner:
             self._start_helper("export_rgb_dual", cmd)
 
         if self.args.launch_picker:
+            meta_path = self.notes_root / "exports" / "latest" / "meta.json"
+            markers_path = self.notes_root / "state" / "markers.json"
             cmd = (
                 f"source /opt/ros/jazzy/setup.bash && "
-                f"python3 {self.scripts_root / 'region_goal_picker_node.py'}"
+                f"python3 {self.scripts_root / 'region_goal_picker_node.py'} "
+                f"--ros-args "
+                f"-p meta_path:={shlex.quote(str(meta_path))} "
+                f"-p markers_path:={shlex.quote(str(markers_path))}"
             )
             self._start_helper("region_goal_picker_node", cmd)
 
@@ -999,8 +1005,10 @@ class LVLMLoopRunner:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--notes-root", default="~/table_nav2/notes/current")
-    ap.add_argument("--scripts-root", default="~/table_nav2/scripts")
+    repo_root = Path(__file__).resolve().parent.parent
+
+    ap.add_argument("--notes-root", default=str(repo_root / "notes" / "current"))
+    ap.add_argument("--scripts-root", default=str(repo_root / "scripts"))
     ap.add_argument("--goal-x", type=float, required=True)
     ap.add_argument("--goal-y", type=float, required=True)
 

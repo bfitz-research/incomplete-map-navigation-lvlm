@@ -158,7 +158,13 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--left-topic", default="/zed_left/rgb")
     ap.add_argument("--right-topic", default="/zed_right/rgb")
-    ap.add_argument("--out-dir", default="~/table_nav2/notes/current/exports")
+    default_out_dir = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.realpath(__file__))),
+        "notes",
+        "current",
+        "exports",
+    )
+    ap.add_argument("--out-dir", default=default_out_dir)
     ap.add_argument("--hz", type=float, default=2.0)
     ap.add_argument("--use-sim-time", action="store_true")
     ap.add_argument("--verbose-skips", action="store_true")

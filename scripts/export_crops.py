@@ -397,7 +397,13 @@ class CropExporter(Node):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out-dir", default="~/table_nav2/notes/current/exports")
+    default_out_dir = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.realpath(__file__))),
+        "notes",
+        "current",
+        "exports",
+    )
+    ap.add_argument("--out-dir", default=default_out_dir)
     ap.add_argument("--hz", type=float, default=2.0)
     ap.add_argument("--global-full-hz", type=float, default=1.0)
     ap.add_argument("--crop-m", type=float, default=10.0)

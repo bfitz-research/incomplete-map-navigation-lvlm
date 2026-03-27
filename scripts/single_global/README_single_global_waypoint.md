@@ -1,6 +1,6 @@
 # Single Global Waypoint Planner (parallel architecture)
 
-This folder contains a **new parallel LVLM architecture** for `table_nav2`.
+This folder contains a **single-global LVLM waypoint architecture** for this repository.
 It does **not** use the old local-region selection contract.
 
 ## What it does
@@ -46,9 +46,10 @@ Start with **global costmap updates ON** and do **not** use blocked-region paint
 Suggested command pattern:
 
 ```bash
-cd ~/table_nav2
+REPO=/path/to/incomplete-map-navigation-lvlm
+cd "$REPO"
 source /opt/ros/jazzy/setup.bash
-python3 scripts/single_global/run_single_global_waypoint_loop.py \
+python3 "$REPO/scripts/single_global/run_single_global_waypoint_loop.py" \
   --goal-x -15.75 \
   --goal-y 21.0 \
   --run-label lvlm_single_global_waypoint_updates_on \

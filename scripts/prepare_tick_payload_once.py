@@ -507,7 +507,12 @@ class PayloadPrepNode(Node):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--notes-root", default="~/table_nav2/notes/current")
+    default_notes_root = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.realpath(__file__))),
+        "notes",
+        "current",
+    )
+    ap.add_argument("--notes-root", default=default_notes_root)
     ap.add_argument("--tf-wait", type=float, default=0.25)
     args = ap.parse_args()
 

@@ -74,7 +74,11 @@ class TrajLogger(Node):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--out", default="", help="Output CSV path. If empty, writes to ~/table_nav2/notes/runs/<timestamp>/traj.csv")
+    ap.add_argument(
+        "--out",
+        default="",
+        help="Output CSV path. If empty, writes to <repo>/notes/current/runs/<timestamp>/traj.csv",
+    )
     ap.add_argument("--hz", type=float, default=10.0)
     ap.add_argument("--parent", default="map")
     ap.add_argument("--child", default="base_link")
@@ -84,7 +88,8 @@ def main():
         out_csv = os.path.expanduser(args.out)
     else:
         ts = time.strftime("%Y%m%d_%H%M%S")
-        out_csv = os.path.expanduser(f"~/table_nav2/notes/runs/{ts}/traj.csv")
+        repo_root = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
+        out_csv = os.path.join(repo_root, "notes", "current", "runs", ts, "traj.csv")
 
     rclpy.init()
     node = TrajLogger(out_csv, args.hz, args.parent, args.child)
