@@ -346,7 +346,7 @@ If you use this repository or its associated methods, please cite:
 > in *2026 International Conference on Machine Learning and Applications (ICMLA)*, IEEE, 2026.
 
 ```bibtex
-@inproceedings{fitzpatrick2026incomplete,
+@inproceedings{fitzpatrick2026VLMvsNav2,
   author    = {Fitzpatrick, Brian and Golilarz, Nourbakhsh Amiri and Korivand, Soroush},
   title     = {When Maps Are Incomplete: Evaluating Vision-Language-Guided Navigation Against Nav2},
   booktitle = {2026 International Conference on Machine Learning and Applications (ICMLA)},
