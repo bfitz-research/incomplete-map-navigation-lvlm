@@ -347,7 +347,7 @@ If you use this repository or its associated methods, please cite:
 
 ```bibtex
 @inproceedings{fitzpatrick2026VLMvsNav2,
-  author    = {Fitzpatrick, Brian and Golilarz, Nourbakhsh Amiri and Korivand, Soroush},
+  author    = {Fitzpatrick, Brian and Golilarz, Noorbakhsh Amiri and Korivand, Soroush},
   title     = {When Maps Are Incomplete: Evaluating Vision-Language-Guided Navigation Against Nav2},
   booktitle = {2026 International Conference on Machine Learning and Applications (ICMLA)},
   publisher = {IEEE},
