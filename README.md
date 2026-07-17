@@ -337,16 +337,21 @@ The documentation intentionally does **not** assume a machine-specific virtual e
 - Empty runtime folders are intentional and should not be removed without understanding script expectations.
 - The repo is organized for reproducibility of the published experiments, not as a general-purpose robotics package.
 
-## Documentation
-
-The current `docs/` folder contains working notes from the project. A cleaned documentation set can be added later if desired.
-
-## License
-
-This project is licensed under the terms of the license in the `LICENSE` file.
-
 ## Citation
 
-Citation information will be added after publication.
+If you use this repository or its associated methods, please cite:
+
+> B. Fitzpatrick, N. A. Golilarz, and S. Korivand,  
+> “When Maps Are Incomplete: Evaluating Vision-Language-Guided Navigation Against Nav2,”  
+> in *2026 International Conference on Machine Learning and Applications (ICMLA)*, IEEE, 2026.
+
+```bibtex
+@inproceedings{fitzpatrick2026incomplete,
+  author    = {Fitzpatrick, Brian and Golilarz, Nourbakhsh Amiri and Korivand, Soroush},
+  title     = {When Maps Are Incomplete: Evaluating Vision-Language-Guided Navigation Against Nav2},
+  booktitle = {2026 International Conference on Machine Learning and Applications (ICMLA)},
+  publisher = {IEEE},
+  year      = {2026}
+}
 
 
